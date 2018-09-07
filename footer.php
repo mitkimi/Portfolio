@@ -3,12 +3,22 @@
 <script>
     hljs.initHighlightingOnLoad();
 </script>
+</el-container>
 <!--footer-->
-<div class="footer">
-	<p>&copy;  <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>, All Rights Reserved</p>
-	<p>自豪的由typecho强力驱动</p>
+<footer>
+<p>
+	&copy;
+	<a href="https://www.mitkimi.com" target="_blank">黑米说</a> /
+	<a href="https://dev.ipietech.net" target="_blank">好甜开发事务所</a> /
+	<a href="https://www.ipietech.com" target="_blank">ipietech.com</a>
+</p>
+<p>
+	Theme is <a href="#" target="_blank">Portfolio</a> by <a href="https://www.mitkimi.com" target="_blank">mitkimi</a>, Powered by <a href="http://typecho.org/" target="_blank">Typecho</a> 
+</p>
+<p>京ICP备15063748号</p>
+</footer>
 </div>
-<script src="<?php $this->options->themeUrl('./assets/layui/layui.all.js'); ?>"></script>
+<script src="<?php $this->options->themeUrl('./script.js'); ?>"></script>
 <?php $this->footer(); ?>
 </body>
 </html>
