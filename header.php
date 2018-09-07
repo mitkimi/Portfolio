@@ -46,10 +46,12 @@
         <div class="logo pull-left"><?php $this->options->title() ?><em><?php $this->options->description() ?></em></div>
       </a>
       <div class="pull-right" style="padding-top: 10px;">
-          <el-input placeholder="搜索" v-model="input5" class="input-with-select">
-              <el-button slot="append" icon="el-icon-search"></el-button>
+        <form class="layui-btn-group" id="search" method="post" action="<?php $this->options->siteUrl(); ?>" role="search" style="border:0;margin:0;padding:0;">
+          <el-input type="text" id="s" name="s" placeholder="搜索" v-model="input5" class="input-with-select">
+              <el-button type="submit" slot="append" icon="el-icon-search"></el-button>
           </el-input>
-        </div>
+        </form>
+      </div>
       <el-menu :default-active="activeIndex" class="pull-right" mode="horizontal" @select="handleSelect">
       <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
         <?php while($pages->next()): ?>
