@@ -1,6 +1,6 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <!DOCTYPE HTML>
-<html class="no-js">
+<html>
 <head>
     <meta charset="<?php $this->options->charset(); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -40,7 +40,7 @@
 <!--[if lt IE 8]>
     <div class="browsehappy" role="dialog"><?php _e('当前网页 <strong>不支持</strong> 你正在使用的浏览器. 为了正常的访问, 请 <a href="http://browsehappy.com/">升级你的浏览器</a>'); ?>.</div>
 <![endif]-->
-<div id="app">
+<div id="app" v-cloak>
     <el-header style="height: 61px;">
       <a href="/">
         <div class="logo pull-left"><?php $this->options->title() ?><em><?php $this->options->description() ?></em></div>

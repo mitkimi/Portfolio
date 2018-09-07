@@ -32,5 +32,10 @@
     <li>下一篇: <?php $this->theNext('%s','没有了'); ?></li>
 </ul>
 
-
+<script>
+    // localStorage.navIndex = 
+</script>
+<?php
+    print_r($this);
+?>
 <?php $this->need('footer.php'); ?>

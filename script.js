@@ -2,7 +2,7 @@ new Vue({
   el: '#app',
   data: {
     visible: false,
-    activeIndex: 1,
+    activeIndex: localStorage.navIndex || 0,
     input5: '',
   },
   methods: {
@@ -17,6 +17,11 @@ new Vue({
     },
     handleClose(key, keyPath) {
       console.log(key, keyPath);
+    },
+    route(mid,link) {
+      this.$message.success(mid);
+      localStorage.navIndex = mid;
+      location.href = link;
     }
   }
 })
