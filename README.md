@@ -1,18 +1,18 @@
-# devsite typecho theme
-> a typeche theme for dev.* typecho.com
+# Portfolio typecho theme
+> a Portfolio theme for typecho
 
 ## Developers' install
 For Mac Developers
 ```bash
 # install typecho first, when website root directory's name is typecho
 cd typecho/usr/theme/
-git clone https://github.com/mitkimi/devsite_theme.git
+git clone https://github.com/mitkimi/Portfolio.git
 # then run apache or nginx service
 ```
 ## Directory and Structure
 
 ```
-mitkimi_typecho_theme     #web
+Portfolio                 #web
 ├─img                     #images
 ├─404.php                 #404 page template
 ├─archive.php             #archive template
@@ -31,5 +31,5 @@ mitkimi_typecho_theme     #web
 ```
 
 ## Change Log
-#### 2018.4.11
+#### 2018.9.7
  * Project init
