@@ -42,28 +42,19 @@
 <![endif]-->
 <div id="app">
     <el-header style="height: 61px;">
-      <div class="logo pull-left"><?php $this->options->title() ?><em><?php $this->options->description() ?></em></div>
+      <a href="/">
+        <div class="logo pull-left"><?php $this->options->title() ?><em><?php $this->options->description() ?></em></div>
+      </a>
       <div class="pull-right" style="padding-top: 10px;">
           <el-input placeholder="搜索" v-model="input5" class="input-with-select">
               <el-button slot="append" icon="el-icon-search"></el-button>
           </el-input>
-          </div>
+        </div>
       <el-menu :default-active="activeIndex" class="pull-right" mode="horizontal" @select="handleSelect">
-          <el-menu-item index="1">处理中心</el-menu-item>
-          <el-submenu index="2">
-          <template slot="title">我的工作台</template>
-          <el-menu-item index="2-1">选项1</el-menu-item>
-          <el-menu-item index="2-2">选项2</el-menu-item>
-          <el-menu-item index="2-3">选项3</el-menu-item>
-          <el-submenu index="2-4">
-              <template slot="title">选项4</template>
-              <el-menu-item index="2-4-1">选项1</el-menu-item>
-              <el-menu-item index="2-4-2">选项2</el-menu-item>
-              <el-menu-item index="2-4-3">选项3</el-menu-item>
-          </el-submenu>
-          </el-submenu>
-          <el-menu-item index="3" disabled>消息中心</el-menu-item>
-          <el-menu-item index="4"><a href="https://www.ele.me" target="_blank">订单管理</a></el-menu-item>
+      <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
+        <?php while($pages->next()): ?>
+          <el-menu-item index="<?php $pages->title(); ?>" onclick="location.href='<?php $pages->permalink(); ?>'"><?php $pages->title(); ?></el-menu-item>
+        <?php endwhile; ?>
       </el-menu>
       <div class="clear"></div>
     </el-header>

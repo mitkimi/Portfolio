@@ -1,14 +1,14 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php $this->need('header.php'); ?>
-
-<div class="layui-container theme-container">
-    <div class="layui-breadcrumb">
-      <a href="/"><?php $this->options->title() ?></a>
-      <?php $this->category(','); ?>
-      <a><cite><?php $this->title() ?></cite></a>
-    </div>
-    <div class="clearfix"></div>
-    <div class="page-container">
+<?php $this->need('sidebar.php'); ?>
+<el-main>
+    <el-breadcrumb separator-class="el-icon-arrow-right" class="breadcrumb">
+        <el-breadcrumb-item :to="{ path: '/' }"><?php $this->options->title() ?></el-breadcrumb-item>
+        <el-breadcrumb-item><?php $this->category(' / '); ?></el-breadcrumb-item>
+        <el-breadcrumb-item><?php $this->title() ?></el-breadcrumb-item>
+        
+    </el-breadcrumb>
+    <el-card>
         <div class="text">
             <div class="title">
                 <?php $this->title() ?>
@@ -24,13 +24,13 @@
             </div>
         </div>
         <div class="clearfix"></div>
-    </div>
-</div>
+    </el-card>
+</el-main>
 
 <ul class="post-near" style="display: none;">
     <li>上一篇: <?php $this->thePrev('%s','没有了'); ?></li>
     <li>下一篇: <?php $this->theNext('%s','没有了'); ?></li>
 </ul>
 
-<?php $this->need('sidebar.php'); ?>
+
 <?php $this->need('footer.php'); ?>

@@ -13,7 +13,7 @@
 	<a href="https://www.ipietech.com" target="_blank">ipietech.com</a>
 </p>
 <p>
-	Theme is <a href="#" target="_blank">Portfolio</a> by <a href="https://www.mitkimi.com" target="_blank">mitkimi</a>, Powered by <a href="http://typecho.org/" target="_blank">Typecho</a> 
+	Theme is <a href="https://github.com/mitkimi/Portfolio" target="_blank">Portfolio</a> by <a href="https://www.mitkimi.com" target="_blank">mitkimi</a>, Powered by <a href="http://typecho.org/" target="_blank">Typecho</a> 
 </p>
 <p>京ICP备15063748号</p>
 </footer>

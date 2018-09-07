@@ -12,22 +12,22 @@ git clone https://github.com/mitkimi/Portfolio.git
 ## Directory and Structure
 
 ```
-Portfolio                 #web
-├─img                     #images
-├─404.php                 #404 page template
-├─archive.php             #archive template
-├─comments.php            #comments component template
-├─footer.php              #footer component template
-├─functions.php           #utility functions
-├─grid.css                #grid css file
-├─header.php              #header component template
-├─index.php               #index page template
-├─page.php                #less change page template
-├─post.php                #post component template
-├─screenshot.png          #screen shot image
-├─sidebar.php             #sidebar component template
-├─style.css               #style css file
-└─README.md               #(this file)
+Portfolio                 # web
+├─img                     # images
+├─404.php                 # 404 page template
+├─archive.php             # archive template
+├─comments.php            # comments component template
+├─footer.php              # footer component template
+├─functions.php           # utility functions
+├─grid.css                # grid css file
+├─header.php              # header component template
+├─index.php               # index page template
+├─page.php                # less change page template
+├─post.php                # post component template
+├─screenshot.png          # screen shot image
+├─sidebar.php             # sidebar component template
+├─style.css               # style css file
+└─README.md               # (this file)
 ```
 
 ## Change Log

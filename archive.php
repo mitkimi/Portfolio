@@ -1,18 +1,24 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php $this->need('header.php'); ?>
+<?php $this->need('sidebar.php'); ?>
 
+<el-main>
+    <el-breadcrumb separator-class="el-icon-arrow-right" class="breadcrumb">
+        <el-breadcrumb-item :to="{ path: '/' }"><?php $this->options->title() ?></el-breadcrumb-item>
+        <el-breadcrumb-item>
+            <?php $this->archiveTitle(array(
+                'category'  =>  _t('%s'),
+                'search'    =>  _t('搜索： "%s"'),
+                'tag'       =>  _t('"%s" 标签下的文章'),
+                'author'    =>  _t('"%s" 发布的文章')
+            ), '', ''); ?>
+        </el-breadcrumb-item>
+        
+    </el-breadcrumb>
 
-<div class="layui-container theme-container">
-    <div class="layui-breadcrumb">
-      <a href="/"><?php $this->options->title() ?></a>
-      <a><cite><?php $this->archiveTitle(array(
-            'category'  =>  _t('%s'),
-            'search'    =>  _t('搜索： "%s"'),
-            'tag'       =>  _t('"%s" 标签下的文章'),
-            'author'    =>  _t('"%s" 发布的文章')
-        ), '', ''); ?></cite></a>
-    </div>
+    <el-card>
     <?php if ($this->have()): ?>
+        
         <div class="theme-flex-container">
             <?php while($this->next()): ?>
                 <div class="layui-col-xs12 layui-col-sm12 layui-col-md6">
@@ -39,10 +45,11 @@
             <p>没有内容</p>
         </div>
     <?php endif; ?>
-</div>
+    </el-card>
+</el-main>
 
 
         
 
-	<?php $this->need('sidebar.php'); ?>
+	
 	<?php $this->need('footer.php'); ?>
