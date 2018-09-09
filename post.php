@@ -35,7 +35,4 @@
 <script>
     // localStorage.navIndex = 
 </script>
-<?php
-    print_r($this);
-?>
 <?php $this->need('footer.php'); ?>

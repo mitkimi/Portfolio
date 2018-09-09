@@ -52,7 +52,6 @@ header .logo em {
 }
 footer {
   text-align: center;
-  border-top: 1px solid rgb(84, 92, 100);
   box-shadow: 0 -2px 2px rgba(0,0,0,.2);
   background: rgba(0,0,0,.05);
   color: #999;
@@ -69,6 +68,66 @@ footer p:first-child{
 }
 .breadcrumb {
   margin-bottom: 20px;
+}
+.nothing-container {
+  width: 300px;
+  margin: 40px auto;
+  text-align: center;
+}
+.nothing-container .pic-container {
+  width: 300px;
+  height: 300px;
+  background: #F2F6FC;
+  border: 1px solid #EBEEF5;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.nothing-container p {
+  font-size: 36px;
+  color: #909399;
+  margin-top: 40px;
+}
+
+.page-navigator-container {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.page-navigator {
+  user-select: none;
+  list-style: none;
+  display: inline-block;
+  vertical-align: top;
+}
+.page-navigator li {
+  margin: 0 4px;
+  background-color: #f4f4f5;
+  min-width: 30px;
+  border-radius: 2px;
+  padding: 0 4px;
+  vertical-align: top;
+  display: inline-block;
+  font-size: 13px;
+  height: 28px;
+  line-height: 28px;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-align: center;
+}
+.page-navigator li a {
+  color: #606266;
+}
+.page-navigator .current {
+  background-color: #409eff;
+}
+.page-navigator .current a {
+  color: #fff;
 }
 
 /** 覆盖element的样式 **/

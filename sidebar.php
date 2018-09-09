@@ -8,7 +8,8 @@
     @close="handleClose"
     background-color="#545c64"
     text-color="#fff"
-    active-text-color="#409eff">
+    active-text-color="#409eff"
+    collapse-transition=false>
     <?php $this->widget('Widget_Metas_Category_List')->to($categorys); ?>
     <?php while($categorys->next()): ?>
         <?php if ($categorys->levels === 0): ?>
